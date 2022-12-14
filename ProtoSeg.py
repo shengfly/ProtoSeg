@@ -12,12 +12,21 @@ import torch
 import torch.nn as nn
 
 class EnhanceNet(nn.Module):
-    def __init__(self,nchanels=1,out_classes=1):
+    def __init__(self,nchanels=1,out_classes=1,ndims='2d'):
         super().__init__()
         
+        # for 1D: self.dims=(2)
         # for 2D image: self.dims=(2,3)
         # for 3D image: self.dims=(2,3,4)
-        self.dims = (2,3)
+        if ndims == '1d':
+            self.dims = (2)
+        elif ndims == '2d':
+            self.dims = (2,3)
+        elif ndims == '3d':
+            self.dims = (2,3,4)
+        else:
+            raise ValueError('ndims must be in [1d,2d,3d]')
+       
         self.softmax = nn.Softmax(dim=1)
         
     def forward(self,xfeat,pred,mask=None):
