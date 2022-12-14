@@ -1,7 +1,7 @@
 #---------------------
 #
 #  This is the code for our ProtoSeg paper:
-#  Segmentation Ability Map: Interpret deep features for medical image segmentation
+#  Segmentation Ability Map: Interpret deep features for medical image segmentation, Medical Image Analysis 
 #
 #  @Author: Sheng He
 #  @Email: heshengxgd@gmail.com
