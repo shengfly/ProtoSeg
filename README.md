@@ -25,4 +25,6 @@ probability_map = neters(x,pred,mask=None)
 ```
 
 you will get a binary map (target lesion: 1, others: 0) based on the input features "x"
+```Python
 binary_map = torch.argmax(probability_map,1) # Note: this is not differentiable.
+```
