@@ -19,11 +19,11 @@ Note: this is not the ground-truth (on test set the ground-truth are not availab
 The values of pred_map should be in [0,1] where 1 represents the target lesion.
 If you use the softmax on the last layer, convert it to probability map into [0,1] where 1 represents target leision.
 
+```Python
 pred_map = torch.rand(2,1,32,32) 
-
 neters = EnhanceNet(nchanels=64,out_classes=1)
-
 probability_map = neters(x,pred,mask=None)
+```
 
 you will get a binary map (target lesion: 1, others: 0) based on the input features "x"
 binary_map = torch.argmax(probability_map,1) # Note: this is not differentiable.
