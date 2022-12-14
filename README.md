@@ -1,4 +1,7 @@
-# ProtoSeg
-The code of the ProtoSeg for interpretation of segmentation maps.
+# ProtoSeg for U-Net interpretation
 
-More details of other parts will come soon.
+Sheng He, Yanfang Feng, P. Ellen Grant, Yangming Ou "Segmentation ability map: Interpret deep features for medical image segmentation", Medical Image Analysis.
+
+
+
+
