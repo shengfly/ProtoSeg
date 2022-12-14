@@ -4,7 +4,7 @@ Sheng He, Yanfang Feng, P. Ellen Grant, Yangming Ou "Segmentation ability map: I
 
 
 # examples to show how to use it
-#----------------------------------------
+
 this is an example of feature tensors extracted on any layers
 The feature can be extracted on any layers in your network
 If the size of the feature does not match your input size, please resize it 
