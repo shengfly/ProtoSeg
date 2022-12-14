@@ -11,7 +11,7 @@
 import torch
 import torch.nn as nn
 
-class EnhanceNet(nn.Module):
+class ProtoSeg(nn.Module):
     def __init__(self,nchanels=1,out_classes=1,ndims='2d'):
         super().__init__()
         
@@ -87,7 +87,7 @@ if __name__ == '__main__':
     
     pred_map = torch.rand(2,1,32,32) 
 
-    neters = EnhanceNet(nchanels=64,out_classes=1)
+    neters = ProtoSeg(nchanels=64,out_classes=1)
     
     probability_map = neters(x,pred,mask=None)
     
