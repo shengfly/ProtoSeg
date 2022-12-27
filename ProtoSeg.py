@@ -89,7 +89,7 @@ if __name__ == '__main__':
 
     neters = ProtoSeg(nchanels=64,out_classes=1)
     
-    probability_map = neters(x,pred,mask=None)
+    probability_map = neters(x,pred_map,mask=None)
     
     # you will get a binary map (target lesion: 1, others: 0) based on the input features "x"
     binary_map = torch.argmax(probability_map,1) # Note: this is not differentiable.
