@@ -20,7 +20,7 @@ If you use the softmax on the last layer, convert it to probability map into [0,
 
 ```Python
 pred_map = torch.rand(2,1,32,32) 
-neters = ProtoSeg(nchanels=64,out_classes=1)
+neters = ProtoSeg(ndims='2d')
 probability_map = neters(x,pred,mask=None)
 ```
 
