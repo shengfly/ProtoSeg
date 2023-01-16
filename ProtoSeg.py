@@ -12,7 +12,7 @@ import torch
 import torch.nn as nn
 
 class ProtoSeg(nn.Module):
-    def __init__(self,nchanels=1,out_classes=1,ndims='2d'):
+    def __init__(self,ndims='2d'):
         super().__init__()
         
         # for 1D: self.dims=(2)
