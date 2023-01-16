@@ -87,7 +87,7 @@ if __name__ == '__main__':
     
     pred_map = torch.rand(2,1,32,32) 
 
-    neters = ProtoSeg(nchanels=64,out_classes=1)
+    neters = ProtoSeg(ndims='2d')
     
     probability_map = neters(x,pred_map,mask=None)
     
